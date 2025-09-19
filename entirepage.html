@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BonIfy</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-40 bg-white/60 backdrop-blur-md shadow-sm w-full">
+        <div class="w-full px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <!-- Logo -->
+                <img src="./images/logo.png" alt="Logo" class="w-20 h-20 rounded-xl object-cover">
+                <div class="hidden sm:block">
+                    <span class="font-semibold text-xl">BonIfy</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-6 text-sm">
+                <a href="#about" class="hover:text-emerald-600">About</a>
+                <a href="#features" class="hover:text-emerald-600">Features</a>
+                <a href="#team" class="hover:text-emerald-600">Team</a>
+                <a href="#future" class="hover:text-emerald-600">Future</a>
+                <a href="#contact" class="px-4 py-2 bg-emerald-600 text-white rounded-md text-sm">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <main class="w-full px-6 py-16">
+        <section id="about" class="grid md:grid-cols-2 gap-8 items-center w-full">
+            <div>
+                <h1 class="text-3xl sm:text-4xl font-extrabold leading-tight">
+                    BonIfy — Grow forests with purpose
+                </h1>
+                <p class="mt-4 text-gray-600">
+                    AI-guided planned plantations, community engagement, and sustainable marketplace —
+                    restoring biodiversity while empowering local stewards.
+                </p>
+            </div>
+            <div class="order-first md:order-last flex justify-center">
+                <div class="rounded-2xl overflow-hidden shadow-lg bg-emerald-50 p-2">
+                    <!-- Hero Image -->
+                    <img src="./images/logo.png" alt="Planned plantation"
+                        class="block max-w-full h-auto object-contain">
+                </div>
+            </div>
+        </section>
+
+        <!-- Scrollable bar with 4 highlight blocks -->
+        <section id="features" class="mt-16 w-full">
+            <h2 class="text-2xl font-bold mb-4">Highlights</h2>
+            <div class="flex space-x-4 overflow-x-auto pb-4 pl-4 pr-4 w-full">
+                <!-- Block 1 -->
+                <div class="flex-shrink-0 w-[218px] h-[400px] bg-white rounded-lg shadow p-4 flex flex-col">
+                    <div class="overflow-hidden rounded-lg h-[300px] mb-2">
+                        <img src="./images/archive.jpg" class="w-full h-full object-cover" />
+                    </div>
+                    <p class="text-sm text-gray-600">Archive</p>
+                </div>
+                <!-- Block 2 -->
+                <div class="flex-shrink-0 w-[218px] h-[400px] bg-white rounded-lg shadow p-4 flex flex-col">
+                    <div class="overflow-hidden rounded-lg h-[300px] mb-2">
+                        <img src="./images/chat.jpg" class="w-full h-full object-cover" />
+                    </div>
+                    <p class="text-sm text-gray-600">Chat bot</p>
+                </div>
+                <!-- Block 3 -->
+                <div class="flex-shrink-0 w-[218px] h-[400px] bg-white rounded-lg shadow p-4 flex flex-col">
+                    <div class="overflow-hidden rounded-lg h-[300px] mb-2">
+                        <img src="./images/rowth.jpg" class="w-full h-full object-cover" />
+                    </div>
+                    <p class="text-sm text-gray-600">Growth tab</p>
+                </div>
+                <!-- Block 4 -->
+                <div class="flex-shrink-0 w-[218px] h-[400px] bg-white rounded-lg shadow p-4 flex flex-col">
+                    <div class="overflow-hidden rounded-lg h-[300px] mb-2">
+                        <img src="./images/market.jpg" class="w-full h-full object-cover" />
+                    </div>
+                    <p class="text-sm text-gray-600">Market Place</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Features -->
+        <section id="future" class="mt-16 w-full">
+            <h2 class="text-2xl font-bold">Our Goals</h2>
+            <p class="mt-3 text-gray-600">We are working to make actual impacts !</p>
+            <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
+                <li>Carbon emission reduced by ~4.9 by 2030</li>
+                <li>Preserving Biodiversity through preserving local plants</li>
+                <li>More knowledgeable plant-buddies!</li>
+                <li>Less trees dying because of lack of care</li>
+                <li>People from almost all backgrounds coming forward to regreen their cities</li>
+            </ul>
+        </section>
+
+        <!-- Team -->
+        <section id="team" class="mt-16 w-full">
+            <h2 class="text-2xl font-bold">Team</h2>
+            <p class="mt-3 text-gray-600">A multidisciplinary team combining ecology, AI, and community development.</p>
+            <div class="mt-6 grid sm:grid-cols-3 gap-6">
+                <div class="p-4 bg-white rounded-lg text-center">
+                    <img src="https://via.placeholder.com/100" class="mx-auto rounded-full w-28 h-28 object-cover">
+                    <h4 class="mt-3 font-semibold">Shreoshee Sarder</h4>
+                    <div class="text-sm text-gray-500">Founder & CEO</div>
+                </div>
+                <div class="p-4 bg-white rounded-lg text-center">
+                    <img src="https://via.placeholder.com/100" class="mx-auto rounded-full w-28 h-28 object-cover">
+                    <h4 class="mt-3 font-semibold">Zarin Tasnim</h4>
+                    <div class="text-sm text-gray-500">CTO, AI & Data</div>
+                </div>
+                <div class="p-4 bg-white rounded-lg text-center">
+                    <img src="https://via.placeholder.com/100" class="mx-auto rounded-full w-28 h-28 object-cover">
+                    <h4 class="mt-3 font-semibold">Prithila Bhowmik</h4>
+                    <div class="text-sm text-gray-500">COO, Research</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Info -->
+        <section id="contact" class="mt-16 bg-emerald-50 p-6 rounded-xl w-full">
+            <h3 class="text-xl font-bold">Contact Us</h3>
+            <p class="mt-2 text-gray-600">Reach out for collaborations, support, or queries.</p>
+            <div class="mt-4 space-y-2 text-gray-700">
+                <p><strong>Email:</strong> contact@bonify.org</p>
+                <p><strong>Phone:</strong> +880 123 456 789</p>
+                <p><strong>Address:</strong> Dhaka, Bangladesh</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-16 text-sm text-gray-600 w-full">
+            <div class="border-t pt-6 flex flex-col md:flex-row justify-between items-center">
+                <div>© <span id="year"></span> BonIfy. All rights reserved.</div>
+                <div class="mt-3 md:mt-0">Made with ♥ for the planet</div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
